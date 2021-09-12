@@ -64,7 +64,13 @@ showTotals();
             }
      });
  });
-
+//Remove items from the cart
+(function removeItems(){
+    const trashBtn = document.getElementById('cart-item-remove');
+    trashBtn.addEventListener("click", function(e){
+        console.log(e.target);
+    });
+})();
  //Show Totals
  function showTotals(){
 const total = [];
